@@ -6,7 +6,6 @@ import {
   TeamOutlined, 
   SafetyOutlined,
   StarOutlined,
-  CheckCircleOutlined,
   MedicineBoxOutlined,
   BankOutlined,
   RocketOutlined,

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Layout, Menu, Button, Space, Row, Col, Drawer } from 'antd';
-import { PhoneOutlined, MailOutlined, CalendarOutlined, MenuOutlined } from '@ant-design/icons';
+import { PhoneOutlined, CalendarOutlined, MenuOutlined } from '@ant-design/icons';
 import santasaLogo from '../assets/logos/santasa-ivf.png';
 
 const { Header: AntHeader } = Layout;

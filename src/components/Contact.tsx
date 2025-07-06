@@ -7,7 +7,6 @@ import {
   ClockCircleOutlined,
   CalendarOutlined,
   UserOutlined,
-  MessageOutlined
 } from '@ant-design/icons';
 // Using public folder for reliable image loading
 const mysoreImage = '/Mysore.png';

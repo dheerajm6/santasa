@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Row, Col, Card, Typography, Progress, Button } from 'antd';
-import { PlayCircleOutlined, HeartFilled, StarFilled } from '@ant-design/icons';
+import { HeartFilled, StarFilled } from '@ant-design/icons';
 import SEO from '../components/SEO';
 
 // Import process icons
@@ -132,15 +132,13 @@ const ivfSteps = [
 
 const IVFProcessPage: React.FC = () => {
   const [activeStep, setActiveStep] = useState(0);
-  const [progress, setProgress] = useState(0);
-  const [autoPlay, setAutoPlay] = useState(false);
+  const [autoPlay] = useState(false);
 
   useEffect(() => {
     if (autoPlay) {
       const interval = setInterval(() => {
         setActiveStep(prev => {
           const next = (prev + 1) % ivfSteps.length;
-          setProgress(((next + 1) / ivfSteps.length) * 100);
           return next;
         });
       }, 4000);
@@ -150,12 +148,8 @@ const IVFProcessPage: React.FC = () => {
 
   const handleStepClick = (index: number) => {
     setActiveStep(index);
-    setProgress(((index + 1) / ivfSteps.length) * 100);
   };
 
-  const toggleAutoPlay = () => {
-    setAutoPlay(!autoPlay);
-  };
 
   return (
     <>
