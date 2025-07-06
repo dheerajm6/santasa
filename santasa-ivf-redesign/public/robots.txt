@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://santasaivf.com/sitemap.xml
+
+# Allow search engines to crawl important pages
+Allow: /about
+Allow: /doctors  
+Allow: /ivf-process
+Allow: /faq
+Allow: /careers
+
+# Block any sensitive or admin areas if they exist
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+
+# Crawl delay (optional)
+Crawl-delay: 1
