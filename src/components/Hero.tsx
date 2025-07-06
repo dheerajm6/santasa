@@ -91,9 +91,9 @@ const Hero: React.FC = () => {
                 display: 'inline-flex',
                 alignItems: 'center',
                 background: 'linear-gradient(45deg, rgba(126, 82, 161, 0.1), rgba(234, 50, 136, 0.1))',
-                padding: '12px 24px',
+                padding: 'clamp(8px, 2vw, 12px) clamp(16px, 4vw, 24px)',
                 borderRadius: '50px',
-                marginBottom: '35px',
+                marginBottom: 'clamp(20px, 5vw, 35px)',
                 border: '1px solid rgba(126, 82, 161, 0.15)',
                 animation: 'softGlow 3s ease-in-out infinite'
               }}>
@@ -165,50 +165,50 @@ const Hero: React.FC = () => {
               {/* Emotional Stats */}
               <div style={{ 
                 display: 'flex', 
-                gap: '50px', 
-                marginBottom: '45px',
+                gap: 'clamp(20px, 5vw, 50px)', 
+                marginBottom: 'clamp(25px, 5vw, 45px)',
                 flexWrap: 'wrap',
                 background: 'rgba(255,255,255,0.7)',
-                padding: '25px 35px',
+                padding: 'clamp(15px, 4vw, 25px) clamp(20px, 5vw, 35px)',
                 borderRadius: '20px',
                 backdropFilter: 'blur(10px)',
                 border: '1px solid rgba(255,255,255,0.3)'
               }}>
                 <div style={{ textAlign: 'center' }}>
                   <div style={{ 
-                    fontSize: '32px', 
+                    fontSize: 'clamp(24px, 6vw, 32px)', 
                     fontWeight: 'bold', 
                     color: '#ea3288',
                     marginBottom: '5px'
                   }}>1000s</div>
                   <div style={{ 
-                    fontSize: '13px', 
+                    fontSize: 'clamp(11px, 2.5vw, 13px)', 
                     color: '#666',
                     fontWeight: '500'
                   }}>Tiny Miracles</div>
                 </div>
                 <div style={{ textAlign: 'center' }}>
                   <div style={{ 
-                    fontSize: '32px', 
+                    fontSize: 'clamp(24px, 6vw, 32px)', 
                     fontWeight: 'bold', 
                     color: '#7e52a1',
                     marginBottom: '5px'
                   }}>16+</div>
                   <div style={{ 
-                    fontSize: '13px', 
+                    fontSize: 'clamp(11px, 2.5vw, 13px)', 
                     color: '#666',
                     fontWeight: '500'
                   }}>Years of Care</div>
                 </div>
                 <div style={{ textAlign: 'center' }}>
                   <div style={{ 
-                    fontSize: '32px', 
+                    fontSize: 'clamp(24px, 6vw, 32px)', 
                     fontWeight: 'bold', 
                     color: '#7e52a1',
                     marginBottom: '5px'
                   }}>2</div>
                   <div style={{ 
-                    fontSize: '13px', 
+                    fontSize: 'clamp(11px, 2.5vw, 13px)', 
                     color: '#666',
                     fontWeight: '500'
                   }}>Loving Centers</div>
@@ -225,11 +225,11 @@ const Hero: React.FC = () => {
                     background: 'linear-gradient(45deg, #7e52a1, #ea3288)',
                     border: 'none',
                     borderRadius: '50px',
-                    height: '60px',
-                    fontSize: '16px',
+                    height: 'clamp(50px, 10vw, 60px)',
+                    fontSize: 'clamp(14px, 3vw, 16px)',
                     fontWeight: '600',
-                    paddingLeft: '35px',
-                    paddingRight: '35px',
+                    paddingLeft: 'clamp(20px, 5vw, 35px)',
+                    paddingRight: 'clamp(20px, 5vw, 35px)',
                     boxShadow: '0 12px 35px rgba(126, 82, 161, 0.4)',
                     transition: 'all 0.3s ease'
                   }}
@@ -252,11 +252,11 @@ const Hero: React.FC = () => {
                     border: '2px solid #7e52a1',
                     color: '#7e52a1',
                     borderRadius: '50px',
-                    height: '60px',
-                    fontSize: '16px',
+                    height: 'clamp(50px, 10vw, 60px)',
+                    fontSize: 'clamp(14px, 3vw, 16px)',
                     fontWeight: '600',
-                    paddingLeft: '35px',
-                    paddingRight: '35px',
+                    paddingLeft: 'clamp(20px, 5vw, 35px)',
+                    paddingRight: 'clamp(20px, 5vw, 35px)',
                     background: 'rgba(255,255,255,0.8)',
                     backdropFilter: 'blur(10px)',
                     transition: 'all 0.3s ease'
@@ -282,7 +282,7 @@ const Hero: React.FC = () => {
           <Col xs={24} lg={11}>
             <div style={{ 
               position: 'relative',
-              height: '650px',
+              height: 'clamp(400px, 80vw, 650px)',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center'
@@ -290,8 +290,8 @@ const Hero: React.FC = () => {
               {/* Main Circle - Journey of Love */}
               <div style={{
                 position: 'relative',
-                width: '550px',
-                height: '550px',
+                width: 'clamp(300px, 70vw, 550px)',
+                height: 'clamp(300px, 70vw, 550px)',
                 borderRadius: '50%',
                 background: 'linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(248,244,255,0.9) 100%)',
                 display: 'flex',
@@ -320,8 +320,8 @@ const Hero: React.FC = () => {
                   textAlign: 'center',
                   background: 'rgba(255,255,255,0.95)',
                   borderRadius: '50%',
-                  width: '340px',
-                  height: '340px',
+                  width: 'clamp(240px, 50vw, 340px)',
+                  height: 'clamp(240px, 50vw, 340px)',
                   display: 'flex',
                   flexDirection: 'column',
                   alignItems: 'center',
@@ -330,25 +330,25 @@ const Hero: React.FC = () => {
                   border: '2px solid rgba(126, 82, 161, 0.1)'
                 }}>
                   {/* Journey Stages */}
-                  <div style={{ marginBottom: '28px' }}>
+                  <div style={{ marginBottom: 'clamp(20px, 4vw, 28px)' }}>
                     <div style={{ 
-                      fontSize: '65px', 
-                      marginBottom: '16px',
+                      fontSize: 'clamp(40px, 10vw, 65px)', 
+                      marginBottom: 'clamp(12px, 3vw, 16px)',
                       animation: 'gentlePulse 3s ease-in-out infinite'
                     }}>
                       👨‍👩‍👧‍👦
                     </div>
                     <div style={{ 
-                      fontSize: '20px', 
+                      fontSize: 'clamp(16px, 3vw, 20px)', 
                       color: '#7e52a1', 
                       fontWeight: '700',
-                      marginBottom: '8px',
-                      letterSpacing: '0.5px'
+                      marginBottom: 'clamp(4px, 1vw, 8px)',
+                      letterSpacing: 'clamp(0.2px, 0.5vw, 0.5px)'
                     }}>
                       Your Complete Family
                     </div>
                     <div style={{ 
-                      fontSize: '14px', 
+                      fontSize: 'clamp(12px, 2.5vw, 14px)', 
                       color: '#ea3288',
                       fontWeight: '500',
                       fontStyle: 'italic'
@@ -360,24 +360,24 @@ const Hero: React.FC = () => {
                   {/* Journey Steps */}
                   <div style={{
                     display: 'flex',
-                    gap: '12px',
+                    gap: 'clamp(8px, 2vw, 12px)',
                     justifyContent: 'center',
                     alignItems: 'center',
-                    marginBottom: '20px'
+                    marginBottom: 'clamp(15px, 3vw, 20px)'
                   }}>
                     <div style={{ textAlign: 'center' }}>
-                      <div style={{ fontSize: '20px', marginBottom: '4px' }}>💝</div>
-                      <div style={{ fontSize: '10px', color: '#7e52a1', fontWeight: '600' }}>Hope</div>
+                      <div style={{ fontSize: 'clamp(16px, 4vw, 20px)', marginBottom: 'clamp(2px, 1vw, 4px)' }}>💝</div>
+                      <div style={{ fontSize: 'clamp(8px, 2vw, 10px)', color: '#7e52a1', fontWeight: '600' }}>Hope</div>
                     </div>
-                    <div style={{ color: '#ea3288', fontSize: '14px', margin: '0 4px' }}>→</div>
+                    <div style={{ color: '#ea3288', fontSize: 'clamp(12px, 2.5vw, 14px)', margin: '0 clamp(2px, 1vw, 4px)' }}>→</div>
                     <div style={{ textAlign: 'center' }}>
-                      <div style={{ fontSize: '20px', marginBottom: '4px' }}>🌟</div>
-                      <div style={{ fontSize: '10px', color: '#7e52a1', fontWeight: '600' }}>Care</div>
+                      <div style={{ fontSize: 'clamp(16px, 4vw, 20px)', marginBottom: 'clamp(2px, 1vw, 4px)' }}>🌟</div>
+                      <div style={{ fontSize: 'clamp(8px, 2vw, 10px)', color: '#7e52a1', fontWeight: '600' }}>Care</div>
                     </div>
-                    <div style={{ color: '#ea3288', fontSize: '14px', margin: '0 4px' }}>→</div>
+                    <div style={{ color: '#ea3288', fontSize: 'clamp(12px, 2.5vw, 14px)', margin: '0 clamp(2px, 1vw, 4px)' }}>→</div>
                     <div style={{ textAlign: 'center' }}>
-                      <div style={{ fontSize: '20px', marginBottom: '4px' }}>👶</div>
-                      <div style={{ fontSize: '10px', color: '#7e52a1', fontWeight: '600' }}>Joy</div>
+                      <div style={{ fontSize: 'clamp(16px, 4vw, 20px)', marginBottom: 'clamp(2px, 1vw, 4px)' }}>👶</div>
+                      <div style={{ fontSize: 'clamp(8px, 2vw, 10px)', color: '#7e52a1', fontWeight: '600' }}>Joy</div>
                     </div>
                   </div>
 
@@ -386,15 +386,15 @@ const Hero: React.FC = () => {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    gap: '6px',
+                    gap: 'clamp(4px, 1vw, 6px)',
                     background: 'linear-gradient(45deg, rgba(126, 82, 161, 0.1), rgba(234, 50, 136, 0.1))',
-                    padding: '5px 12px',
+                    padding: 'clamp(3px, 1vw, 5px) clamp(8px, 2vw, 12px)',
                     borderRadius: '20px',
                     border: '1px solid rgba(126, 82, 161, 0.15)'
                   }}>
-                    <StarOutlined style={{ color: '#FFD700', fontSize: '10px' }} />
+                    <StarOutlined style={{ color: '#FFD700', fontSize: 'clamp(8px, 2vw, 10px)' }} />
                     <span style={{ 
-                      fontSize: '9px', 
+                      fontSize: 'clamp(7px, 1.5vw, 9px)', 
                       color: '#7e52a1',
                       fontWeight: '600'
                     }}>
@@ -416,17 +416,17 @@ const Hero: React.FC = () => {
                     key={i}
                     style={{
                       position: 'absolute',
-                      fontSize: '36px',
+                      fontSize: 'clamp(24px, 6vw, 36px)',
                       animation: `gentleOrbit 20s linear infinite`,
                       animationDelay: item.delay,
-                      transformOrigin: '275px 275px',
+                      transformOrigin: 'clamp(150px, 35vw, 275px) clamp(150px, 35vw, 275px)',
                       filter: 'drop-shadow(0 4px 15px rgba(126, 82, 161, 0.2))'
                     }}
                   >
                     <div style={{
                       background: 'rgba(255,255,255,0.9)',
                       borderRadius: '50%',
-                      padding: '10px',
+                      padding: 'clamp(6px, 2vw, 10px)',
                       boxShadow: '0 8px 25px rgba(0,0,0,0.1)',
                       border: '2px solid rgba(126, 82, 161, 0.1)'
                     }}>
@@ -440,6 +440,32 @@ const Hero: React.FC = () => {
         </Row>
       </div>
 
+      <style>{`
+        /* Mobile-specific optimizations */
+        @media (max-width: 576px) {
+          /* Hide orbiting elements on very small screens */
+          div[style*="gentleOrbit"] {
+            display: none !important;
+          }
+          
+          /* Ensure better spacing on mobile */
+          .ant-space-item {
+            margin-bottom: 10px !important;
+          }
+          
+          /* Make sure buttons stack properly */
+          .ant-space.ant-space-horizontal.ant-space-wrap {
+            justify-content: center !important;
+          }
+        }
+        
+        @media (max-width: 768px) {
+          /* Reduce transform origins for smaller circles */
+          div[style*="transformOrigin"] {
+            transform-origin: 50% 50% !important;
+          }
+        }
+      `}</style>
     </div>
   );
 };
