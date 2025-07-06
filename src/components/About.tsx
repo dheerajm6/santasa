@@ -355,7 +355,19 @@ const About: React.FC = () => {
                       boxShadow: '0 4px 15px rgba(0,0,0,0.1)',
                       border: '3px solid white'
                     }}>
-                      {milestone.icon}
+                      <span style={{ 
+                        color: '#fff', 
+                        fontSize: '20px',
+                        lineHeight: '1'
+                      }}>
+                        {React.cloneElement(milestone.icon, { 
+                          style: { 
+                            fontSize: '20px', 
+                            color: '#fff',
+                            background: 'none'
+                          } 
+                        })}
+                      </span>
                     </div>
                   ),
                   children: (
